@@ -29,6 +29,7 @@ header {
     background: rgb(4, 17, 45);
     align-items: center;
     height: 80px;
+    z-index: 1;
 
 }
 
@@ -41,6 +42,7 @@ ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    
 
 }
 
@@ -53,20 +55,41 @@ header a {
 }
 
 header a:hover {
-    color: rgb(195, 85, 65);
+    background-color: rgb(195, 85, 65);
+    border:2px solid rgb(195, 85, 65);
+    
+    border-radius: 8%;
 }
 
 /* main section */
-.banner-1 {
+/* .banner-1 {
     height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
-    background: rgb(236, 223, 206);
-}
+    /* margin: 50px 50px; */
+    /* background: rgb(236, 223, 206); */
+    /* border:2px solid rgb(195, 85, 65); */
+.banner-1 {
+background:rgb(236, 223, 206);
+height: 100vh;
 
-.banner-1 img {
+
+}
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+     
+       height: 100vh;
+      
+       
+       
+   
+        
+    }
+
+.container img {
     width: 100%;
     height: auto;
     max-width: 250px;
@@ -113,58 +136,63 @@ header a:hover {
 }
 
 
+
+/* about me section */
 /* about me section */
 .about-me {
     background: rgb(236, 223, 206);
-
-    height: 100vh;
     color: rgb(4, 17, 45);
 
+    padding-top: 120px;  
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Heading */
 .about-me h2 {
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 100px;
-    color: rgb(4, 17, 45);
-
+    margin-bottom: 40px;
 }
 
+/* Paragraph */
 .about-me-par {
-
+    max-width: 1300px;
     text-align: center;
-
-    margin-left: 30px;
-    margin-right: 30px;
-    color: rgb(4, 17, 45);
-
-
-
-
+    margin-bottom: 60px;
+    padding: 0 20px;
+    line-height: 1.7;
 }
 
+/* Info cards container */
 .info-item {
     display: flex;
-    justify-content: space-evenly;
-
-    img {
-        width: 50px;
-        height: auto;
-    }
-
-    padding-top: 300px;
-    color: rgb(4, 17, 45);
+    gap: 80px;
 }
 
+/* Cards */
 .ab-card {
     display: flex;
     flex-direction: column;
-
-
-    text-align: center;
     align-items: center;
-
+    text-align: center;
 }
+
+/* Icons */
+.ab-card img {
+    width: 45px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transform: translateY(5px);
+    translate: transform 0.3s ease;
+}
+.ab-card img:hover {
+    transform: translateY(-5px);
+}
+
 
 
 /* -------projects------ */
@@ -193,21 +221,30 @@ header a:hover {
     border-radius: 30px;
     background: white;
     padding-top: 7px;
+    /* transform: translateY(90px); */
+    transition: transform 0.9s ease;
 
 
 }
-
+.cal:hover {
+    transform: translateY(-10px);
+}
 .cal-para {
+    /* display: none; */
     text-align: center;
     padding: 10px;
     border: 2px 0 0 rgb(195, 85, 65);
     background-color: cadetblue;
     height: 250px;
+    /* width: 250px; */
     border-radius: 30px;
     padding-top: 100px;
-
+    transform: translateY(0);
+    transition: transform 0.3s ease;
 }
-
+.cal-para:hover {
+    transform: translateY(20px); 
+}
 .btn-vistproject {
     display: inline-block;
     padding: 10px 20px;
@@ -298,6 +335,7 @@ header a:hover {
 
 }
 
+
 #subject {
     width: 1050px;
     height: 60px;
@@ -368,5 +406,9 @@ footer{
     color:white;
     text-align: center;
     align-items: center;
+    height: 70px;
+    p{
+        padding-top: 20px;
+    }
     
 }
