@@ -23,54 +23,48 @@ html {
 /* header section */
 header {
     position: fixed;
-    width: 100vw;
-    color: rgb(195, 85, 65);
+   
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 6px; */
+    color: rgb(195, 85, 65);
+    /* display: flex; */
     justify-content: space-around;
     background: rgb(4, 17, 45);
     align-items: center;
     height: 80px;
+    width: 100%;
     z-index: 1;
 
 }
-
-header h2 {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-ul {
-    list-style: none;
+.navs
+{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
     
-
 }
-
-header a {
-    color: white;
+.navs a{
+    margin: 6px;
+    padding: 6px;
     text-decoration: none;
-    font-size: 18px;
-
-
+    color: white;
 }
 
-header a:hover {
+
+
+  .navs  a:hover {
     background-color: rgb(195, 85, 65);
-    border:2px solid rgb(195, 85, 65);
+   
     
     border-radius: 8%;
-}
+} 
 
-/* main section */
-/* .banner-1 {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* margin: 50px 50px; */
-    /* background: rgb(236, 223, 206); */
-    /* border:2px solid rgb(195, 85, 65); */
+
 .banner-1 {
 background:rgb(236, 223, 206);
 height: 100vh;
